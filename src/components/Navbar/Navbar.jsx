@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 
-export default function Navbar({ navLinks, activeSection, onNavClick }) {
+export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -11,28 +14,45 @@ export default function Navbar({ navLinks, activeSection, onNavClick }) {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const handleClick = (id) => {
-    setMenuOpen(false);
-    onNavClick(id);
+  const closeMenu = () => setMenuOpen(false);
+
+  const handleContactClick = (e) => {
+    e.preventDefault();
+    closeMenu();
+    if (location.pathname === '/') {
+      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
   };
+
+  const isActive = (path) => location.pathname === path ? 'navbar__link--active' : '';
 
   return (
     <nav className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
       <div className="navbar__inner">
-        <a href="#hero" className="navbar__logo" onClick={() => handleClick('hero')}>
+        <Link to="/" className="navbar__logo" onClick={closeMenu}>
           CM
-        </a>
+        </Link>
         <ul className={`navbar__links${menuOpen ? ' navbar__links--open' : ''}`}>
-          {navLinks.map((link) => (
-            <li key={link.id}>
-              <button
-                className={`navbar__link${activeSection === link.id ? ' navbar__link--active' : ''}`}
-                onClick={() => handleClick(link.id)}
-              >
-                {link.label}
-              </button>
-            </li>
-          ))}
+          <li>
+            <Link to="/" className={`navbar__link ${isActive('/')}`} onClick={closeMenu}>
+              作品
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className={`navbar__link ${isActive('/about')}`} onClick={closeMenu}>
+              关于
+            </Link>
+          </li>
+          <li>
+            <a href="#contact" className="navbar__link" onClick={handleContactClick}>
+              联系
+            </a>
+          </li>
         </ul>
         <button
           className={`navbar__hamburger${menuOpen ? ' navbar__hamburger--open' : ''}`}

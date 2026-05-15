@@ -1,0 +1,5 @@
+.rich-content p {
+  margin-bottom: var(--space-6);
+  line-height: 1.8;
+  color: var(--color-gray-700);
+}

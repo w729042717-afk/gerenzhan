@@ -1,0 +1,11 @@
+.about-philosophy {
+  max-width: 720px;
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-8);
+}
+
+.about-philosophy h2 {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  margin-bottom: var(--space-6);
+}

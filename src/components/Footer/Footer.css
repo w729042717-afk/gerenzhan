@@ -10,11 +10,17 @@
   color: var(--color-gray-500);
 }
 
-.footer__top {
+.footer__links {
+  display: flex;
+  gap: var(--space-6);
+}
+
+.footer__links a {
   color: var(--color-gray-500);
+  text-decoration: none;
   transition: color var(--transition-fast);
 }
 
-.footer__top:hover {
+.footer__links a:hover {
   color: var(--color-black);
 }

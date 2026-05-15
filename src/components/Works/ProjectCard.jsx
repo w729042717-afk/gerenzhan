@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 import './ProjectCard.css';
 
 export default function ProjectCard({ project }) {
   return (
     <article className="project-card">
-      <div className="project-card__image-wrap">
+      <Link to={`/projects/${project.id}`} className="project-card__image-wrap">
         {project.image ? (
           <img className="project-card__image" src={project.image} alt={project.title} loading="lazy" />
         ) : (
@@ -12,11 +13,11 @@ export default function ProjectCard({ project }) {
           </div>
         )}
         <div className="project-card__overlay">
-          <a href={project.links.live} className="project-card__overlay-link">
+          <span className="project-card__overlay-link">
             查看项目 &rarr;
-          </a>
+          </span>
         </div>
-      </div>
+      </Link>
       <div className="project-card__body">
         <h3 className="project-card__title">{project.title}</h3>
         <p className="project-card__desc">{project.description}</p>

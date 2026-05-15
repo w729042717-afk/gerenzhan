@@ -27,4 +27,6 @@ export const timeline = Object.entries(timelineModules).map(([path, data]) => ({
 
 export const skillCategories = Object.values(skillsModules);
 
+export const getProjectBySlug = (slug) => projects.find((p) => p.id === slug);
+
 export { personalInfo, contactInfo };
