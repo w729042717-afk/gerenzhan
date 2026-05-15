@@ -1,0 +1,96 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: settings
+    label: Site Settings
+    extension: json
+    format: json
+    files:
+      - label: Personal Info
+        name: personalInfo
+        file: content/settings/personalInfo.json
+        fields:
+          - { label: Name, name: name, widget: string }
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: text }
+          - { label: Bio, name: bio, widget: text }
+          - { label: Avatar, name: avatar, widget: image, required: false }
+          - label: Highlights
+            name: highlights
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Value, name: value, widget: string }
+
+      - label: Contact Info
+        name: contactInfo
+        file: content/settings/contactInfo.json
+        fields:
+          - { label: Email, name: email, widget: string }
+          - label: Social Links
+            name: social
+            widget: object
+            fields:
+              - { label: GitHub URL, name: github, widget: string, required: false }
+              - { label: LinkedIn URL, name: linkedin, widget: string, required: false }
+              - { label: Twitter URL, name: twitter, widget: string, required: false }
+              - { label: Dribbble URL, name: dribbble, widget: string, required: false }
+
+  - name: projects
+    label: Projects
+    label_singular: Project
+    folder: content/projects
+    create: true
+    extension: json
+    format: json
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: text }
+      - { label: Image, name: image, widget: image, required: false }
+      - label: Tags
+        name: tags
+        widget: list
+        default: []
+      - label: Links
+        name: links
+        widget: object
+        fields:
+          - { label: Live URL, name: live, widget: string, required: false }
+          - { label: GitHub URL, name: github, widget: string, required: false }
+
+  - name: timeline
+    label: Experience
+    label_singular: Experience
+    folder: content/timeline
+    create: true
+    extension: json
+    format: json
+    slug: "{{slug}}"
+    fields:
+      - { label: Date, name: date, widget: string }
+      - { label: Title, name: title, widget: string }
+      - { label: Company, name: company, widget: string }
+      - { label: Description, name: description, widget: text }
+
+  - name: skills
+    label: Skill Categories
+    label_singular: Skill Category
+    folder: content/skills
+    create: true
+    extension: json
+    format: json
+    slug: "{{slug}}"
+    fields:
+      - { label: Category Name, name: category, widget: string }
+      - label: Skills
+        name: skills
+        widget: list
+        fields:
+          - { label: Skill Name, name: name, widget: string }
+          - { label: Level (0-100), name: level, widget: number, value_type: int, min: 0, max: 100 }

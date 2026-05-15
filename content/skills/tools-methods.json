@@ -1,0 +1,9 @@
+{
+  "category": "Tools & Methods",
+  "skills": [
+    { "name": "Design Thinking", "level": 90 },
+    { "name": "Agile / Scrum", "level": 85 },
+    { "name": "A/B Testing", "level": 75 },
+    { "name": "Accessibility", "level": 80 }
+  ]
+}

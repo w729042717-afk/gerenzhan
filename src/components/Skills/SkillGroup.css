@@ -1,0 +1,51 @@
+.skill-group {
+  background: var(--color-gray-100);
+  padding: var(--space-8);
+}
+
+.skill-group__title {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-black);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: var(--space-6);
+}
+
+.skill-group__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.skill-group__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--text-sm);
+  color: var(--color-gray-700);
+  margin-bottom: 6px;
+}
+
+.skill-group__pct {
+  color: var(--color-gray-400);
+  font-size: 0.75rem;
+}
+
+.skill-group__bar {
+  height: 4px;
+  background: var(--color-gray-200);
+  overflow: hidden;
+}
+
+.skill-group__fill {
+  height: 100%;
+  width: 0;
+  background: var(--color-black);
+  transition: width 1s ease-out;
+}
+
+.skill-group__fill--animate {
+  width: var(--level);
+  transition-delay: var(--delay);
+}

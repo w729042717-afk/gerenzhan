@@ -1,0 +1,9 @@
+{
+  "category": "Development",
+  "skills": [
+    { "name": "HTML / CSS", "level": 85 },
+    { "name": "JavaScript", "level": 70 },
+    { "name": "React", "level": 65 },
+    { "name": "Git", "level": 75 }
+  ]
+}

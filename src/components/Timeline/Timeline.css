@@ -1,0 +1,21 @@
+.timeline {
+  position: relative;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.timeline__line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--color-gray-200);
+  transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+  .timeline__line {
+    left: 20px;
+  }
+}

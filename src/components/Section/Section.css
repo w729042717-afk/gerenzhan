@@ -1,0 +1,36 @@
+.section {
+  padding: var(--space-24) 0;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.section--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section__header {
+  text-align: center;
+  margin-bottom: var(--space-16);
+}
+
+.section__title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-black);
+  letter-spacing: -0.5px;
+  margin-bottom: var(--space-4);
+}
+
+.section__line {
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background: var(--color-black);
+}
+
+.section__body {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Alex Chen",
+  "title": "Product Designer",
+  "subtitle": "I craft minimal, functional digital experiences that put users first.",
+  "bio": "I am a product designer with 6+ years of experience creating digital products that balance aesthetics with usability. Currently based in San Francisco, I specialize in design systems, user research, and interaction design. I believe the best design is invisible — it gets out of the way and lets people accomplish what they came to do.",
+  "avatar": "",
+  "highlights": [
+    { "label": "Years Experience", "value": "6+" },
+    { "label": "Projects Shipped", "value": "40+" },
+    { "label": "Happy Clients", "value": "25+" }
+  ]
+}
