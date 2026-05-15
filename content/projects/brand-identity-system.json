@@ -1,7 +1,7 @@
 {
-  "title": "Brand Identity System",
-  "description": "Created a comprehensive brand identity and design system for a climate-tech startup, including logo, typography, and component library.",
+  "title": "品牌视觉体系",
+  "description": "为一家气候科技创业公司打造完整的品牌视觉识别系统和设计规范，涵盖 Logo、字体排印和组件库。",
   "image": "",
-  "tags": ["Branding", "Design Systems", "Typography"],
+  "tags": ["品牌设计", "设计系统", "字体排印"],
   "links": { "live": "#", "github": "#" }
 }

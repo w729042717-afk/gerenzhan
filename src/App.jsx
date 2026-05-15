@@ -42,7 +42,7 @@ export default function App() {
         subtitle={personalInfo.subtitle}
       />
       <div className="app">
-        <Section id="about" title="About">
+        <Section id="about" title="关于">
           <About
             bio={personalInfo.bio}
             avatar={personalInfo.avatar}
@@ -50,19 +50,19 @@ export default function App() {
           />
         </Section>
 
-        <Section id="works" title="Selected Works">
+        <Section id="works" title="精选作品">
           <Works projects={projects} />
         </Section>
 
-        <Section id="timeline" title="Experience">
+        <Section id="timeline" title="工作经历">
           <Timeline events={timeline} />
         </Section>
 
-        <Section id="skills" title="Skills">
+        <Section id="skills" title="专业技能">
           <Skills categories={skillCategories} />
         </Section>
 
-        <Section id="contact" title="Get in Touch">
+        <Section id="contact" title="联系我">
           <Contact email={contactInfo.email} social={contactInfo.social} />
         </Section>
       </div>

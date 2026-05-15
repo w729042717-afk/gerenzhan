@@ -13,7 +13,7 @@ export default function ProjectCard({ project }) {
         )}
         <div className="project-card__overlay">
           <a href={project.links.live} className="project-card__overlay-link">
-            View Project &rarr;
+            查看项目 &rarr;
           </a>
         </div>
       </div>

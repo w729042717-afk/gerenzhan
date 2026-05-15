@@ -1,12 +1,12 @@
 {
-  "name": "Alex Chen",
-  "title": "Product Designer",
-  "subtitle": "I craft minimal, functional digital experiences that put users first.",
-  "bio": "I am a product designer with 6+ years of experience creating digital products that balance aesthetics with usability. Currently based in San Francisco, I specialize in design systems, user research, and interaction design. I believe the best design is invisible — it gets out of the way and lets people accomplish what they came to do.",
+  "name": "陈明",
+  "title": "产品设计师",
+  "subtitle": "专注于打造简约、实用的数字产品体验。",
+  "bio": "我是一名拥有6年+经验的产品设计师，致力于创造兼顾美学与可用性的数字产品。现居杭州，专注于设计系统、用户研究和交互设计。我相信最好的设计是隐形的——它不喧宾夺主，而是让用户专注于完成他们想做的事。",
   "avatar": "",
   "highlights": [
-    { "label": "Years Experience", "value": "6+" },
-    { "label": "Projects Shipped", "value": "40+" },
-    { "label": "Happy Clients", "value": "25+" }
+    { "label": "工作经验", "value": "6+年" },
+    { "label": "交付项目", "value": "40+" },
+    { "label": "服务客户", "value": "25+" }
   ]
 }

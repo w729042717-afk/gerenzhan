@@ -20,7 +20,7 @@ export default function Navbar({ navLinks, activeSection, onNavClick }) {
     <nav className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
       <div className="navbar__inner">
         <a href="#hero" className="navbar__logo" onClick={() => handleClick('hero')}>
-          AC
+          CM
         </a>
         <ul className={`navbar__links${menuOpen ? ' navbar__links--open' : ''}`}>
           {navLinks.map((link) => (
@@ -37,7 +37,7 @@ export default function Navbar({ navLinks, activeSection, onNavClick }) {
         <button
           className={`navbar__hamburger${menuOpen ? ' navbar__hamburger--open' : ''}`}
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
+          aria-label="切换菜单"
         >
           <span />
           <span />

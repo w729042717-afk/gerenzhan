@@ -1,9 +1,9 @@
 {
-  "category": "Tools & Methods",
+  "category": "工具与方法",
   "skills": [
-    { "name": "Design Thinking", "level": 90 },
-    { "name": "Agile / Scrum", "level": 85 },
-    { "name": "A/B Testing", "level": 75 },
-    { "name": "Accessibility", "level": 80 }
+    { "name": "设计思维", "level": 90 },
+    { "name": "敏捷/Scrum", "level": 85 },
+    { "name": "A/B 测试", "level": 75 },
+    { "name": "无障碍设计", "level": 80 }
   ]
 }

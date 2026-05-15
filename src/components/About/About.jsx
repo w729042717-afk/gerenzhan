@@ -5,7 +5,7 @@ export default function About({ bio, avatar, highlights }) {
     <div className="about">
       {avatar && (
         <div className="about__image">
-          <img src={avatar} alt="Portrait" />
+          <img src={avatar} alt="个人照片" />
         </div>
       )}
       <div className={`about__text${!avatar ? ' about__text--full' : ''}`}>

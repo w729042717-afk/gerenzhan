@@ -1,7 +1,7 @@
 {
-  "title": "Fintech Dashboard Redesign",
-  "description": "Complete redesign of a financial analytics dashboard, improving data visualization and reducing cognitive load for day traders.",
+  "title": "金融仪表盘重设计",
+  "description": "全面重构金融分析仪表盘，优化数据可视化效果，降低短线交易者的认知负荷。",
   "image": "",
-  "tags": ["Figma", "Design Systems", "User Research"],
+  "tags": ["Figma", "设计系统", "用户研究"],
   "links": { "live": "#", "github": "#" }
 }

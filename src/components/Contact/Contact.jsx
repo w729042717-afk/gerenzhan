@@ -45,14 +45,14 @@ export default function Contact({ email, social }) {
       </div>
 
       {submitted ? (
-        <p className="contact__thanks">Thanks for reaching out! I will get back to you soon.</p>
+        <p className="contact__thanks">感谢联系！我会尽快回复。</p>
       ) : (
         <form className="contact__form" onSubmit={handleSubmit}>
           <div className="contact__field">
             <input
               type="text"
               name="name"
-              placeholder="Your Name"
+              placeholder="姓名"
               value={form.name}
               onChange={handleChange}
               required
@@ -62,7 +62,7 @@ export default function Contact({ email, social }) {
             <input
               type="email"
               name="email"
-              placeholder="Your Email"
+              placeholder="邮箱"
               value={form.email}
               onChange={handleChange}
               required
@@ -71,14 +71,14 @@ export default function Contact({ email, social }) {
           <div className="contact__field">
             <textarea
               name="message"
-              placeholder="Your Message"
+              placeholder="留言内容"
               rows={5}
               value={form.message}
               onChange={handleChange}
               required
             />
           </div>
-          <button type="submit" className="contact__submit">Send Message</button>
+          <button type="submit" className="contact__submit">发送消息</button>
         </form>
       )}
     </div>

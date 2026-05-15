@@ -1,9 +1,9 @@
 {
-  "category": "Design",
+  "category": "设计",
   "skills": [
     { "name": "Figma", "level": 95 },
-    { "name": "Design Systems", "level": 90 },
-    { "name": "Prototyping", "level": 85 },
-    { "name": "User Research", "level": 80 }
+    { "name": "设计系统", "level": 90 },
+    { "name": "原型设计", "level": 85 },
+    { "name": "用户研究", "level": 80 }
   ]
 }

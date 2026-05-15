@@ -1,7 +1,7 @@
 {
-  "title": "Health Tracking Mobile App",
-  "description": "End-to-end mobile app design for a health startup, from user interviews to high-fidelity prototypes and developer handoff.",
+  "title": "健康管理 App",
+  "description": "为一家健康科技创业公司完成端到端移动应用设计，涵盖用户访谈、高保真原型到开发交付的全流程。",
   "image": "",
-  "tags": ["UI/UX", "Prototyping", "Mobile"],
+  "tags": ["UI/UX", "原型设计", "移动端"],
   "links": { "live": "#", "github": "#" }
 }

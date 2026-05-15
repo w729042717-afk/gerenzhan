@@ -8,11 +8,11 @@ const skillsModules = import.meta.glob('/content/skills/*.json', { eager: true, 
 const slugFromPath = (path) => path.split('/').pop().replace('.json', '');
 
 export const navLinks = [
-  { id: 'about', label: 'About' },
-  { id: 'works', label: 'Works' },
-  { id: 'timeline', label: 'Experience' },
-  { id: 'skills', label: 'Skills' },
-  { id: 'contact', label: 'Contact' },
+  { id: 'about', label: '关于' },
+  { id: 'works', label: '作品' },
+  { id: 'timeline', label: '经历' },
+  { id: 'skills', label: '技能' },
+  { id: 'contact', label: '联系' },
 ];
 
 export const projects = Object.entries(projectModules).map(([path, data]) => ({

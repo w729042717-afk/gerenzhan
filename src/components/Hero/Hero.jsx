@@ -12,7 +12,7 @@ export default function Hero({ name, title, subtitle }) {
         <h1 className="hero__name">{name}</h1>
         <p className="hero__subtitle">{subtitle}</p>
         <button className="hero__cta" onClick={scrollToWorks}>
-          View My Work
+          查看作品
         </button>
       </div>
       <div className="hero__scroll">

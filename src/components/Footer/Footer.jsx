@@ -6,9 +6,9 @@ export default function Footer({ name }) {
   return (
     <footer className="footer">
       <p className="footer__text">
-        &copy; {year} {name}. All rights reserved.
+        &copy; {year} {name}版权所有
       </p>
-      <a href="#hero" className="footer__top">Back to top &uarr;</a>
+      <a href="#hero" className="footer__top">回到顶部 &uarr;</a>
     </footer>
   );
 }

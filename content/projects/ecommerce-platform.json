@@ -1,7 +1,7 @@
 {
-  "title": "E-commerce Platform",
-  "description": "Designed a complete e-commerce experience including product discovery, cart, checkout flow, and post-purchase journey.",
+  "title": "电商平台设计",
+  "description": "设计完整电商体验，包括商品发现、购物车、结算流程和购后体验全链路。",
   "image": "",
-  "tags": ["E-commerce", "Wireframing", "User Flows"],
+  "tags": ["电商", "线框图", "用户流程"],
   "links": { "live": "#", "github": "#" }
 }

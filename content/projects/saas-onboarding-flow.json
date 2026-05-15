@@ -1,7 +1,7 @@
 {
-  "title": "SaaS Onboarding Flow",
-  "description": "Streamlined onboarding for a B2B SaaS product, reducing drop-off by 40% through iterative testing and refinement.",
+  "title": "SaaS 新手引导流程",
+  "description": "为 B2B SaaS 产品优化新手引导流程，通过迭代测试和持续优化，将用户流失率降低 40%。",
   "image": "",
-  "tags": ["SaaS", "A/B Testing", "Interaction Design"],
+  "tags": ["SaaS", "A/B测试", "交互设计"],
   "links": { "live": "#", "github": "#" }
 }
